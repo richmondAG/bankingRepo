@@ -1,58 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="10" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-28T04:50:10 EST" name="Suite" finished-at="2023-02-28T04:50:24 EST" duration-ms="14269">
+  <suite started-at="2023-02-28T05:41:00 EST" name="Suite" finished-at="2023-02-28T05:41:10 EST" duration-ms="10045">
     <groups>
-      <group name="Sanity">
-        <method signature="OLBSimulatorTestCase.test1()[pri:0, instance:bankTestCases.OLBSimulatorTestCase@1165b38]" name="test1" class="bankTestCases.OLBSimulatorTestCase"/>
-      </group> <!-- Sanity -->
-      <group name="Smoke">
-        <method signature="AuthorizationCodeEntryTestCase.validatesecutityQuesRadioBtn()[pri:0, instance:bankTestCases.AuthorizationCodeEntryTestCase@327514f]" name="validatesecutityQuesRadioBtn" class="bankTestCases.AuthorizationCodeEntryTestCase"/>
-        <method signature="OLBSimulatorTestCase.test1()[pri:0, instance:bankTestCases.OLBSimulatorTestCase@1165b38]" name="test1" class="bankTestCases.OLBSimulatorTestCase"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-02-28T04:50:10 EST" name="Test" finished-at="2023-02-28T04:50:24 EST" duration-ms="14269">
+    <test started-at="2023-02-28T05:41:00 EST" name="Test" finished-at="2023-02-28T05:41:10 EST" duration-ms="10045">
       <class name="bankTestCases.HomePage5TestCases">
-        <test-method is-config="true" signature="loadProp()[pri:0, instance:bankTestCases.HomePage5TestCases@38425407]" started-at="2023-02-28T04:50:10 EST" name="loadProp" finished-at="2023-02-28T04:50:10 EST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="loadProp()[pri:0, instance:bankTestCases.HomePage5TestCases@557caf28]" started-at="2023-02-28T05:41:00 EST" name="loadProp" finished-at="2023-02-28T05:41:00 EST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadProp -->
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:bankTestCases.HomePage5TestCases@557caf28]" started-at="2023-02-28T05:41:00 EST" name="launchApp" finished-at="2023-02-28T05:41:07 EST" duration-ms="6601" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="homepage()[pri:0, instance:bankTestCases.HomePage5TestCases@557caf28]" started-at="2023-02-28T05:41:07 EST" name="homepage" finished-at="2023-02-28T05:41:10 EST" duration-ms="3197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
       </class> <!-- bankTestCases.HomePage5TestCases -->
-      <class name="bankTestCases.OLBSimulatorTestCase">
-        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:bankTestCases.OLBSimulatorTestCase@1165b38]" started-at="2023-02-28T04:50:18 EST" name="launchApp" finished-at="2023-02-28T04:50:23 EST" duration-ms="5353" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApp -->
-        <test-method signature="test1()[pri:0, instance:bankTestCases.OLBSimulatorTestCase@1165b38]" started-at="2023-02-28T04:50:23 EST" name="test1" finished-at="2023-02-28T04:50:24 EST" duration-ms="796" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- bankTestCases.OLBSimulatorTestCase -->
-      <class name="bankTestCases.AuthorizationCodeEntryTestCase">
-        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:bankTestCases.AuthorizationCodeEntryTestCase@327514f]" started-at="2023-02-28T04:50:10 EST" name="launchApp" finished-at="2023-02-28T04:50:16 EST" duration-ms="6209" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApp -->
-        <test-method signature="validatesecutityQuesRadioBtn()[pri:0, instance:bankTestCases.AuthorizationCodeEntryTestCase@327514f]" started-at="2023-02-28T04:50:16 EST" name="validatesecutityQuesRadioBtn" finished-at="2023-02-28T04:50:18 EST" duration-ms="1856" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatesecutityQuesRadioBtn -->
-      </class> <!-- bankTestCases.AuthorizationCodeEntryTestCase -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
