@@ -25,6 +25,9 @@ public class HomePage5 extends BaseTest {
 	@FindBy(xpath = "//*[@id='root']/div/div/header/div/div[3]/div/nav/ul/li[2]/a")
 	private WebElement billpayTab;
 	
+	@FindBy(xpath= "//*[text()='Transfer | Zelle®']")
+	private WebElement transferTab;
+	
 	public  HomePage5() {
 		
 		PageFactory.initElements(getDriver(), this);
@@ -48,4 +51,10 @@ public class HomePage5 extends BaseTest {
 		return new BillPay();
 	}
 
+	
+	public IwanToTransferMoney clickingTransferTab() {
+		ac.click(transferTab, getDriver());
+		
+		return new IwanToTransferMoney();
+	}
 }

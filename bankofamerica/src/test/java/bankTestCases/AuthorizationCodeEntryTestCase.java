@@ -13,6 +13,7 @@ import pageObjects.AuthorizationCodeEntry4;
 import pageObjects.OLBSimulator1;
 import pageObjects.RequestAuthorizationCode3;
 import pageObjects.UnrecognizedPage2;
+import utility.Log;
 
 /**
  * @author richm
@@ -34,8 +35,10 @@ public class AuthorizationCodeEntryTestCase extends BaseTest {
 	    re=	ol.clickingOnSignIn();
 	    ra= re.unrecognizedPageSignIn();
 	    ac=  ra.clickingOnSendCode();
+	    Log.info("Verifying If Radio Button IS Enabled");
 	    boolean radio=     ac.validatingsecutityQuesRadioBtn();
 	    Assert.assertTrue(radio);
+	    Log.info("Radio Is Enabled");
 	    
 		
 		

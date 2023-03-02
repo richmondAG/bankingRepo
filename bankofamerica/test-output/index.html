@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\richm\git\BankOfAmerica\bankofamerica\AuthorizationCodeEntrytestng.xml</span>
+                    <span>C:\Users\richm\git\BankOfAmerica\bankofamerica\OLBSimulatortestng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="bankTestCases.AuthorizationCodeEntryTestCase" class="method navigator-link" hash-for-method="validatesecutityQuesRadioBtn">validatesecutityQuesRadioBtn</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="bankTestCases.OLBSimulatorTestCase" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,14 +121,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">bankTestCases.AuthorizationCodeEntryTestCase</span>
+              <span class="class-name">bankTestCases.OLBSimulatorTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validatesecutityQuesRadioBtn">
-                  </a> <!-- validatesecutityQuesRadioBtn -->
-                  <span class="method-name">validatesecutityQuesRadioBtn</span>
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,17 +136,20 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\richm\git\BankOfAmerica\bankofamerica\AuthorizationCodeEntrytestng.xml</span>
+            <span class="header-content">C:\Users\richm\git\BankOfAmerica\bankofamerica\OLBSimulatortestng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;FireFox&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.ListinerClass&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;FireFox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;bankTestCases.AuthorizationCodeEntryTestCase&quot;/&gt;
+      &lt;class name=&quot;bankTestCases.OLBSimulatorTestCase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -171,10 +174,18 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
+              <span class="test-group-name">Sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">test1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">Smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">validatesecutityQuesRadioBtn</span>
+                <span class="method-in-group-name">test1</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -196,14 +207,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validatesecutityQuesRadioBtn')
-data.setCell(0, 2, 'bankTestCases.AuthorizationCodeEntryTestCase')
-data.setCell(0, 3, 1810);
+data.setCell(0, 1, 'test1')
+data.setCell(0, 2, 'bankTestCases.OLBSimulatorTestCase')
+data.setCell(0, 3, 922);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 922 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -229,18 +240,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">bankTestCases.AuthorizationCodeEntryTestCase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">bankTestCases.OLBSimulatorTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">loadProp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">launchApp(FireFox)</span>
-                <span class="method-start">53 ms</span>
+                <span class="method-start">300 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validatesecutityQuesRadioBtn</span>
-                <span class="method-start">7324 ms</span>
+                <span class="method-name">test1</span>
+                <span class="method-start">7005 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

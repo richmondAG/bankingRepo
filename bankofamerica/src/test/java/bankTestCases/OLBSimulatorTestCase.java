@@ -20,6 +20,7 @@ import baseTest.BaseTest;
 import pageObjects.OLBSimulator1;
 import pageObjects.UnrecognizedPage2;
 import utility.ExtendReport;
+import utility.Log;
 
 
 /**
@@ -40,9 +41,12 @@ public class OLBSimulatorTestCase extends BaseTest{
 		re = ol.clickingOnSignIn();
 		
 		//ExtendReport.test.log(Status.INFO, "Verifying if user is able to click sign in");
+		ExtendReport.test.info("Verifying If Users Is Able Click To The Page");
+		Log.info("Verifying If Users Is Able Click To The Page");
 		String checIfClickWorks = re.validatingClick();
 		System.out.println("Real"+ ""+ checIfClickWorks);
 		Assert.assertEquals(checIfClickWorks, "The1bank");
+		Log.info("Click Success");
 	}
 	
 

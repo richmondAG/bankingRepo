@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="bankTestCases.AuthorizationCodeEntryTestCase">
+      <class name="bankTestCases.OLBSimulatorTestCase">
         <methods>
-          <include name="setUp"/>
+          <include name="launchApp"/>
+          <include name="test1"/>
           <include name="loadProp"/>
-          <include name="validatesecutityQuesRadioBtn"/>
         </methods>
-      </class> <!-- bankTestCases.AuthorizationCodeEntryTestCase -->
+      </class> <!-- bankTestCases.OLBSimulatorTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

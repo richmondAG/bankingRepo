@@ -22,6 +22,8 @@ import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+import org.apache.log4j.xml.DOMConfigurator;
+
 /**
  * @author richm
  *
@@ -39,6 +41,8 @@ public class BaseTest {
 	 
 	 @BeforeSuite(groups= {"Smoke","Sanity" })
 	 public void loadProp() throws IOException {
+		 
+			DOMConfigurator.configure("log4j.xml");
 		 
 		 try {
 			  FileInputStream fil= new FileInputStream(System.getProperty("user.dir")+"\\Config\\configs.properties");
